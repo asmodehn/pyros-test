@@ -173,7 +173,7 @@ html_theme = 'nature'
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'pyros_setup_pydoc'
+htmlhelp_basename = 'pyros_test_pydoc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -193,7 +193,7 @@ latex_elements = {
 # start file, target name, title, author, documentclass
 # [howto/manual]).
 latex_documents = [
-  ('index', 'pyros-setup.tex',
+  ('index', 'pyros-test.tex',
    u'Pyros.',
    u'AlexV', 'manual'),
 ]
@@ -224,7 +224,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'pyros-setup',
+    ('index', 'pyros-test',
      u'Pyros',
      [u'AlexV'], 1)
 ]
@@ -239,9 +239,9 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'pyros-setup',
+  ('index', 'pyros-test',
    u'pyros Documentation',
-   u'AlexV', 'pyros-setup', 'pyros-setup.',
+   u'AlexV', 'pyros-test', 'pyros-test.',
    'Miscellaneous'),
 ]
 

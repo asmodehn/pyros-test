@@ -18,6 +18,12 @@ add_service_files(DIRECTORY srv
 generate_messages(DEPENDENCIES std_msgs)
 catkin_package( CATKIN_DEPENDS message_runtime std_msgs)
 
+install(
+    PROGRAMS
+        nodes/echo.py
+    DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+    )
+
 # Lint Python modules
 file(GLOB_RECURSE ${PROJECT_NAME}_PY_SRCS
      RELATIVE ${PROJECT_SOURCE_DIR} src/pyros_test/*.py)

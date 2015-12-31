@@ -2,7 +2,7 @@
 
 
 import rospy
-import python_setup_testpkg
+import pyros_test
 
 ##############################################################################
 # Main
@@ -10,8 +10,8 @@ import python_setup_testpkg
 
 
 if __name__ == '__main__':
-    rospy.init_node('pyros_setup_testnode')
-    node = python_test.EchoNode()
+    rospy.init_node('pyros_test_echo')
+    node = pyros_test.EchoNode()
     node.spin()
 
 

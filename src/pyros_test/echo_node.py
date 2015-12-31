@@ -16,7 +16,7 @@ try:
     import std_msgs.msg as std_msgs
 except ImportError:
     # emulating ros setup when needed here allow us to launch nodes and debug them from IDE.
-    pyros_setup.ROS_emulate_setup()
+    pyros_setup.delayed_import()
     import roslib
     import rospy
     import std_msgs.msg as std_msgs
