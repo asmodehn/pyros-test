@@ -3,7 +3,7 @@
   <name>pyros_test</name>
   <version>0.0.4</version>
   <description>
-    Package containing basic test nodes for Pyros dynamic ROS interface
+    Basic test nodes for Pyros dynamic ROS interface
   </description>
 
   <license>BSD</license>
