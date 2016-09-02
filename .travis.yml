@@ -38,6 +38,10 @@ install:
   - docker exec -ti ${CONTAINER_NAME} apt-get update
   # TMP Patch because rosdep doesnt declare a dependency to sudo yet (2016-08-25) and it doesnt come with xenial
   - docker exec -ti ${CONTAINER_NAME} apt-get install sudo -y
+  # TMP Patch because catkin doesnt declare a dependency to gcc yet (2016-09-02) and it doesnt come in ros image
+  - docker exec -ti ${CONTAINER_NAME} apt-get install build-essential -y
+
+  # refreshing rosdep
   - docker exec -ti ${CONTAINER_NAME} rosdep update
   # copying local clone to the running container (volume is currently broken)
   - docker cp . ${CONTAINER_NAME}:/git_clone
