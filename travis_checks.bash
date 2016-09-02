@@ -19,7 +19,7 @@ source /opt/ros/$ROS_DISTRO/setup.bash
 
 mkdir -p testbuild
 cd testbuild
-cmake ../test -DCMAKE_INSTALL_PREFIX=./install
+cmake .. -DCMAKE_INSTALL_PREFIX=./install
 if [ "$ROS_FLOW" == "devel" ]; then
     make -j1
     source devel/setup.bash
