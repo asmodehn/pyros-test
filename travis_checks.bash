@@ -17,8 +17,8 @@ cd $DIR
 # Also it is mandatory when this script is run directly by the developer.
 source /opt/ros/$ROS_DISTRO/setup.bash
 
-mkdir -p testbuild
-cd testbuild
+mkdir -p build
+cd build
 cmake .. -DCMAKE_INSTALL_PREFIX=./install
 if [ "$ROS_FLOW" == "devel" ]; then
     make -j1
@@ -30,6 +30,6 @@ elif [ "$ROS_FLOW" == "install" ]; then
     make -j1 install
     source install/setup.bash
     # TMP disabling test from now, since pyros-test has no tests
-    #nosetests pyros-test
-    #python -m nose pyros-test
+    #nosetests pyros_test
+    #python -m nose pyros_test
 fi
