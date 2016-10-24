@@ -2,8 +2,8 @@
 Changelog for package pyros_test
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.5 (2016-10-24)
+------------------
 * now using params within nodes exposing a service.
   added gitignore.
 * adding message type definition for pyros to use optional ros fields.
