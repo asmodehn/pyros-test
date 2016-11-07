@@ -2,8 +2,8 @@
 Changelog for package pyros_test
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.6 (2016-11-07)
+------------------
 * Merge pull request `#5 <https://github.com/asmodehn/pyros-test/issues/5>`_ from asmodehn/string_sub_node
   implementing a simple string_sub_node
 * implementing a simple string_sub_node
